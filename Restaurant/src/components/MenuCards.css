@@ -1,60 +1,78 @@
-.menu {
-    padding: 4rem 2rem;
-    background-color: #fff9f0;
-    text-align: center;
-}
-.menu h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #333;
-}
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-}
-.menu-card {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 1.5rem;
-    transition: transform 0.3s ease;
-}
-.menu-card:hover {
-    transform: translateY(-8px);
-}
-.menu-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-.menu-card h3 {
-    font-size: 1.4rem;
-    margin: 1rem 0 0.5rem;
-    color: #222;
-}
-.menu-card p {
-    font-size: 1rem;
-    color: #666;
-}
-.price {
-    display: block;
-    font-weight: bold;
-    margin: 0.5rem 0;
-    color: #ff5c5c;
-}
-.order-btn {
-    padding: 0.6rem 1.2rem;
-    background-color: #ff5c5c;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.order-btn:hover {
-    background-color: #e04848;
-}
+.menu { 
+    padding: 4rem 2rem; 
+    background-color: #fff9f0; 
+    text-align: center; 
+} 
+ 
+.menu h2 { 
+    font-size: 2.5rem; 
+    margin-bottom: 2rem; 
+    color: #333; 
+} 
+ 
+.menu-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 2rem; 
+} 
+ 
+.menu-card { 
+    background: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); 
+    overflow: hidden; 
+    padding: 1.5rem; 
+    transition: transform 0.3s ease; 
+} 
+ 
+.menu-card:hover { 
+    transform: translateY(-8px); 
+} 
+ 
+.menu-card img { 
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+} 
+ 
+.menu-card h3 { 
+    font-size: 1.4rem; 
+    margin: 1rem 0 0.5rem; 
+    color: #222; 
+} 
+ 
+.menu-card p { 
+    font-size: 1rem; 
+    color: #666; 
+} 
+ 
+.price { 
+    display: block; 
+    font-weight: bold; 
+    margin: 0.5rem 0; 
+    color: #ff5c5c; 
+} 
+ 
+.order-btn { 
+    padding: 0.6rem 1.2rem; 
+    background-color: #ff5c5c; 
+    color: white; 
+    border: none; 
+    border-radius: 6px; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+} 
+ 
+.order-btn:hover { 
+    background-color: #e04848; 
+} 
+
+/* On smaller screens, stack cards */ 
+@media (max-width: 768px) { 
+    .menu-grid { 
+        flex-direction: column; 
+        align-items: center; 
+    } 
+} 
